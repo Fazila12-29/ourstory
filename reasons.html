@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Love Story - Reasons I Love You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="reasons.html" class="active">Reasons</a>
+    <a href="letters.html">Letters</a>
+    <a href="fun.html">Fun</a>
+  </nav>
+  <main>
+    <h2 class="script-title center">10 Reasons I Love You</h2>
+    <div class="reasons-grid">
+      <!-- Each card includes an icon, a reason, and optional expandable memory -->
+      <div class="reason-card">
+        <img src="assets/icons/laugh.png" alt="Icon" class="reason-icon">
+        <h4>Your Laugh</h4>
+        <button class="expand-btn" onclick="toggleReason(0)">Show Memory</button>
+        <p class="reason-memory">The way you laugh lights up my world. Remember that time we couldn’t stop giggling at the movie theater?</p>
+      </div>
+      <div class="reason-card">
+        <img src="assets/icons/support.png" alt="Icon" class="reason-icon">
+        <h4>Your Support</h4>
+        <button class="expand-btn" onclick="toggleReason(1)">Show Memory</button>
+        <p class="reason-memory">You always have my back, no matter what I’m facing. I’ll never forget how you encouraged me before my big interview.</p>
+      </div>
+      <div class="reason-card">
+        <img src="assets/icons/smile.png" alt="Icon" class="reason-icon">
+        <h4>Your Smile</h4>
+        <button class="expand-btn" onclick="toggleReason(2)">Show Memory</button>
+        <p class="reason-memory">Your smile melts my heart. It’s the first thing I look for every day.</p>
+      </div>
+      <div class="reason-card">
+        <img src="assets/icons/caring.png" alt="Icon" class="reason-icon">
+        <h4>Your Caring Nature</h4>
+        <button class="expand-btn" onclick="toggleReason(3)">Show Memory</button>
+        <p class="reason-memory">You care so deeply for everyone around you. I love seeing you with animals and kids.</p>
+      </div>
+      <div class="reason-card">
+        <img src="assets/icons/adventure.png" alt="Icon" class="reason-icon">
+        <h4>Your Adventurous Spirit</h4>
+        <button class="expand-btn" onclick="toggleReason(4)">Show Memory</button>
+        <p class="reason-memory">You’re always up for an adventure. Our spontaneous road trips are the best.</p>
+      </div>
+      <div class="reason-card">
+        <img src="assets/icons/listener.png" alt="Icon" class="reason-icon">
+        <h4>You're a Great Listener</h4>
+        <button class="expand-btn" onclick="toggleReason(5)">Show Memory</button>
+        <p class="reason-memory">You listen to my rants and dreams without judgment. Thank you for always being there.</p>
+      </div>
+      <div class="reason-card">
+        <img src="assets/icons/cook.png" alt="Icon" class="reason-icon">
+        <h4>Your Cooking</h4>
+        <button class="expand-btn" onclick="toggleReason(6)">Show Memory</button>
+        <p class="reason-memory">Your surprise breakfasts make my mornings so special.</p>
+      </div>
+      <div class="reason-card">
+        <img src="assets/icons/hug.png" alt="Icon" class="reason-icon">
+        <h4>Your Hugs</h4>
+        <button class="expand-btn" onclick="toggleReason(7)">Show Memory</button>
+        <p class="reason-memory">Your hugs make everything better. I feel safe and loved in your arms.</p>
+      </div>
+      <div class="reason-card">
+        <img src="assets/icons/tease.png" alt="Icon" class="reason-icon">
+        <h4>Your Playful Teasing</h4>
+        <button class="expand-btn" onclick="toggleReason(8)">Show Memory</button>
+        <p class="reason-memory">You know how to make me smile even on a bad day with your playful jokes.</p>
+      </div>
+      <div class="reason-card">
+        <img src="assets/icons/partner.png" alt="Icon" class="reason-icon">
+        <h4>Being My Partner</h4>
+        <button class="expand-btn" onclick="toggleReason(9)">Show Memory</button>
+        <p class="reason-memory">I love building a life with you, side by side, every single day.</p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* General */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #fff0f6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #b1457b;
+  position: relative;
+}
+
+.landing {
+  background: linear-gradient(135deg, #ffd6e0 0%, #fff0f6 100%);
+}
+
+a {
+  text-decoration: none;
+  color: #b1457b;
+}
+
+.center {
+  text-align: center;
+}
+
+.script-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  margin: 1em 0 0.5em 0;
+  color: #b1457b;
+  letter-spacing: 2px;
+}
+
+.navbar {
+  background: #ffc7de;
+  box-shadow: 0 2px 8px #ffb5d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  margin: 0 2vw;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.navbar a.active, .navbar a:hover {
+  color: #f76cbe;
+}
+.navbar a.active:after {
+  content: '♥';
+  margin-left: 4px;
+  color: #f76cbe;
+  font-size: 0.9em;
+}
+
+/* Animated Background */
+.bg-animated {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1;
+  background: radial-gradient(circle at 60% 40%, #ffd6e0 0%, #fff0f6 100%);
+  animation: bgmove 10s ease-in-out infinite alternate;
+  opacity: 0.7;
+}
+
+@keyframes bgmove {
+  0% { background-position: 60% 40%; }
+  100% { background-position: 80% 60%; }
+}
+
+/* Landing Content */
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh;
+  padding: 2em 1em;
+}
+
+.welcome {
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+  color: #9e3a6a;
+}
+.highlight {
+  font-weight: bold;
+  color: #f76cbe;
+}
+.romantic-quote {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+  color: #f76cbe;
+  margin-top: 1em;
+  text-align: center;
+}
+
+audio {
+  margin: 2em auto 0 auto;
+  display: block;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin: 2em auto;
+  padding: 2em 0;
+  width: 90vw;
+  max-width: 850px;
+}
+.timeline-event {
+  width: 50%;
+  padding: 1em 2em;
+  position: relative;
+  animation: fadeInUp 1s;
+}
+.timeline-event.left {
+  left: 0;
+  text-align: right;
+}
+.timeline-event.right {
+  left: 50%;
+  text-align: left;
+}
+.timeline-content {
+  background: #ffe7f1;
+  border-radius: 15px;
+  padding: 1em;
+  box-shadow: 0 4px 16px #ffb5d1;
+  margin-bottom: 2em;
+  position: relative;
+  transition: transform 0.4s;
+}
+.timeline-content:hover {
+  transform: scale(1.04);
+}
+.timeline-content img {
+  width: 90%;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 6px #f8bbd0;
+}
+.timeline-date {
+  color: #f76cbe;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+@media (max-width: 800px) {
+  .timeline-event,
+  .timeline-event.left,
+  .timeline-event.right {
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 0.5em 0.8em;
+  }
+  .timeline {
+    padding: 1em 0;
+  }
+}
+
+/* Reasons
